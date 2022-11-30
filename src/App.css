@@ -1,4 +1,73 @@
-.App {
+@font-face {
+  font-family: "Bebas";
+  src: local("Bebas"), url(../public/BebasNeue-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "BebasBold";
+  src: local("BebasBold"), url(../public/BebasNeue-Bold.ttf) format("truetype");
+}
+
+.intro {
+  height: 75vh;
+}
+
+.h1font {
+  font-family: "BebasBold";
+  color: #f1f1ef;
+  height: 100px;
+  font-size: 100px;
+  border: 4px;
+  margin: 150px 0px 25px 80px;
+}
+
+.h2font {
+  font-family: "Bebas";
+  color: #c7dad4;
+  background: rgb(0, 0, 0, 0.1);
+  margin-left: 80px;
+  margin-right: 80px;
+  font-size: 60px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+.h3font {
+  font-family: "Bebas";
+  color: #c7dad4;
+  background: rgb(0, 0, 0, 0.1);
+  margin-left: 80px;
+  margin-right: 80px;
+  font-size: 42px;
+  margin-top: 5px;
+}
+
+/*.headerFont{
+  font-family: "BebasBold";
+  font-size: 40px;
+  color: #beaebd;
+}
+
+#topHeader{
+  background-color: #25364F;
+  height: 60px;
+  line-height: 60px;
+  border: 2px;
+  margin: 0px 0px 0px 0px;
+  width: 100%;
+  font-size: 40px;
+
+  //border: 1px solid red;
+  text-align: center;
+}
+*/
+
+body {
+  /*background-color: #2f414f;*/
+  background-image: url(../public/mountain.png);
+}
+
+/*.App {
   text-align: center;
 }
 
@@ -36,3 +105,4 @@
     transform: rotate(360deg);
   }
 }
+*/

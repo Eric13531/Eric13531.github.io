@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="intro">
+        <h1 class="h1font"> Hello, </h1>
+        <h2 class="h2font">
+          My name is Eric Zhang and I'm a first year Computer Science student at
+          the University of Waterloo.
+        </h2>
+        <h3 class="h3font">
+          I love computer science and coding. I do computing competitions and I
+          have experience with Java, Python, C++, Html, CSS and JavaScript.
+        </h3>
+      </div>
+      <div>
+        <h1> NEXT PART </h1>
+      </div>
+    </>
   );
 }
 
