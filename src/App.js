@@ -16,7 +16,7 @@ function App() {
         </h3>
       </div>
       <div>
-        <h1> NEXT PART </h1>
+        <h1> </h1>
       </div>
     </>
   );
