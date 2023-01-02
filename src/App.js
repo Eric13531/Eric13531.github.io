@@ -12,7 +12,8 @@ function App() {
         </h2>
         <h3 class="h3font">
           I love computer science and coding. I do computing competitions and I
-          have experience with Java, Python, C++, Html, CSS and JavaScript.
+          have experience with Java, Python, C++, Html, CSS, JavaScript and
+          React.js
         </h3>
       </div>
       <div>
