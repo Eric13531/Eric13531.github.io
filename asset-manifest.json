@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.707f48c7.css",
-    "main.js": "/static/js/main.7ab6f228.js",
+    "main.js": "/static/js/main.89089ade.js",
     "static/js/787.223550ad.chunk.js": "/static/js/787.223550ad.chunk.js",
     "static/media/mountain.png": "/static/media/mountain.6f84f63a562efa63e847.png",
     "static/media/BebasNeue-Regular.ttf": "/static/media/BebasNeue-Regular.7d2f1e3c43251f14336c.ttf",
@@ -9,11 +9,11 @@
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
     "main.707f48c7.css.map": "/static/css/main.707f48c7.css.map",
-    "main.7ab6f228.js.map": "/static/js/main.7ab6f228.js.map",
+    "main.89089ade.js.map": "/static/js/main.89089ade.js.map",
     "787.223550ad.chunk.js.map": "/static/js/787.223550ad.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.707f48c7.css",
-    "static/js/main.7ab6f228.js"
+    "static/js/main.89089ade.js"
   ]
 }
