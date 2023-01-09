@@ -1,0 +1,80 @@
+@font-face {
+  font-family: "Avro";
+  src: local("Bebas"),
+    url(../../public/Arvo/Arvo-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "AvroBold";
+  src: local("BebasBold"),
+    url(../../public/Arvo/Arvo-Bold.ttf) format("truetype");
+}
+
+.card {
+  position: relative;
+  height: 25vh;
+  width: 30vw;
+  border: 1.5px solid #e7f2fa;
+  border-radius: 10px;
+  box-sizing: border-box;
+  outline: 0;
+  display: block;
+}
+
+#card1,
+#card2 {
+  position: absolute;
+  top: 62vh;
+}
+
+.smallCard {
+  font-family: "AvroBold";
+  position: absolute;
+  top: 10vh;
+  text-align: center;
+  font-size: 2.5vh;
+  padding-left: 4vw;
+  padding-right: 4vw;
+}
+
+.bigCard {
+  font-family: "Avro";
+  font-size: 3.2vh;
+  text-align: left;
+  position: absolute;
+  padding-top: 0.8vh;
+
+  padding-left: 3vw;
+  padding-right: 3vw;
+}
+
+#card1 {
+  left: 15vw;
+}
+
+#card2 {
+  right: 15vw;
+}
+
+#card3 {
+  position: absolute;
+  width: 70vw;
+  top: 32vh;
+  right: 15vw;
+}
+
+.title {
+  font-family: "AvroBold";
+  font-size: 4vh;
+  text-align: center;
+}
+
+.text {
+  color: #e7f2fa;
+}
+
+.text2 {
+  font-family: "Avro";
+  position: absolute;
+  top: 14vh;
+}

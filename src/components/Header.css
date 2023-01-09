@@ -1,0 +1,20 @@
+.header {
+  height: 15vh;
+  width: 100vw;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.link {
+  font-family: "Noto Sans Mono", monospace;
+  display: inline-block;
+  padding-top: 5vh;
+  padding-left: 5vw;
+  font-size: 5vh;
+}

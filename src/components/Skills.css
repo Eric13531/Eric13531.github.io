@@ -1,0 +1,22 @@
+.skills-div {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+}
+
+@font-face {
+  font-family: "Bebas";
+  src: local("Bebas"),
+    url(../../public/BebasNeue-Regular.ttf) format("truetype");
+}
+
+.about {
+  color: #f7f9fc;
+  text-align: center;
+  position: relative;
+  top: 16vh;
+  left: 10vw;
+  width: 80vw;
+  font-size: 12vh;
+  font-family: "Bebas";
+}

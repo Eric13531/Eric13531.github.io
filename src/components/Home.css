@@ -1,0 +1,67 @@
+@font-face {
+  font-family: "Bebas";
+  src: local("Bebas"),
+    url(../../public/BebasNeue-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "BebasBold";
+  src: local("BebasBold"),
+    url(../../public/BebasNeue-Bold.ttf) format("truetype");
+}
+
+.home {
+  position: relative;
+  height: 100vh;
+  width: 98vw;
+}
+
+.body-font {
+  font-family: "Bebas";
+  color: #e7f2fa;
+  background: rgb(0, 0, 0, 0.1);
+  padding-right: 0vw;
+  padding-left: 0vw;
+  margin-right: 0vw;
+  margin-left: 0vw;
+}
+
+.h1font {
+  position: relative;
+  display: block;
+  font-family: "BebasBold";
+  color: #f1f1ef;
+  font-size: 20vh;
+  height: auto;
+  padding-top: 25vh;
+  margin: 0vh 0 0 5.5vw;
+}
+
+.h2font {
+  position: relative;
+  display: block;
+  height: auto;
+  font-size: 8vh;
+  margin-top: 0vh;
+  margin-bottom: 0;
+  padding-right: 0vw;
+  padding-left: 6vw;
+  margin-right: 0vw;
+  margin-left: 0vw;
+}
+
+/*.h3font {
+  position: relative;
+  display: block;
+  height: auto;
+  font-size: 4.5vh;
+  margin-top: 2vh;
+  padding-right: 0vw;
+  padding-left: 3vw;
+  margin-right: 0vw;
+  margin-left: 0vw;
+}*/
+
+/*body {
+  background-image: url(../../public/mountain.png);
+}*/
