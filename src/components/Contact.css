@@ -2,7 +2,7 @@
   position: absolute;
   height: 90vh;
   width: 100vw;
-  top: 400vh;
+  top: auto;
   background: rgb(0, 26, 43);
   background: linear-gradient(
     180deg,

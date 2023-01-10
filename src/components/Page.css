@@ -42,7 +42,7 @@
 
 body {
   width: 100vw;
-  height: 480vh;
+  height: auto;
   position: relative;
   background-color: #001a2b;
   /*background-image: url(../../public/mountain.png),
