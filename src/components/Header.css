@@ -1,8 +1,17 @@
 .header {
-  height: 15vh;
+  height: 10vh;
   width: 100vw;
   margin-top: 0px;
   padding-top: 0px;
+
+  background: rgb(0, 26, 43);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 26, 43, 1) 0%,
+    rgba(9, 35, 63, 1) 0%,
+    rgba(34, 63, 122, 1) 100%,
+    rgba(42, 72, 139, 1) 100%
+  );
 }
 
 .sticky {
@@ -14,7 +23,37 @@
 .link {
   font-family: "Noto Sans Mono", monospace;
   display: inline-block;
-  padding-top: 5vh;
+  padding-top: 2.2vh;
+  padding-left: 4vw;
+  font-size: 4vh;
+}
+
+.home-link {
+  margin-right: 1vw;
+  font-size: 4.1vh;
+  padding-left: 7.9vw;
+}
+
+.other-link {
   padding-left: 5vw;
-  font-size: 5vh;
+}
+
+.link:link {
+  color: #55bed7;
+  text-decoration: none;
+}
+
+.link:visited {
+  color: #55bed7;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #b4eaee;
+  text-decoration: underline;
+}
+
+.link:active {
+  color: #0a467e;
+  text-decoration: underline;
 }

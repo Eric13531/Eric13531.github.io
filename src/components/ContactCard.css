@@ -10,72 +10,50 @@
     url(../../public/Arvo/Arvo-Bold.ttf) format("truetype");
 }
 
-.card {
+.concard {
   position: relative;
   height: 25vh;
-  width: 30vw;
+  width: 20vw;
   border: 1.5px solid #e7f2fa;
   border-radius: 10px;
   box-sizing: border-box;
   outline: 0;
   display: block;
+  top: 40vh;
 }
 
-#card1,
-#card2 {
+#con1 {
   position: absolute;
-  top: 62vh;
+  left: 10vw;
 }
 
-.smallCard {
+#con2 {
+  position: absolute;
+  left: 40vw;
+}
+
+#con3 {
+  position: absolute;
+  right: 10vw;
+}
+.contitle {
+  color: #e7f2fa;
   font-family: "AvroBold";
-  position: absolute;
-  top: 10vh;
-  text-align: center;
-  font-size: 2.5vh;
-  padding-left: 4vw;
-  padding-right: 4vw;
-}
-
-.bigCard {
-  font-family: "Avro";
   font-size: 3.2vh;
-  text-align: left;
-  position: absolute;
-  padding-top: 0.8vh;
-
-  padding-left: 3vw;
-  padding-right: 3vw;
-}
-
-#card1 {
-  left: 15vw;
-}
-
-#card2 {
-  right: 15vw;
-}
-
-#card3 {
-  position: absolute;
-  width: 70vw;
-  top: 32vh;
-  right: 15vw;
-}
-
-.title {
-  font-family: "AvroBold";
-  font-size: 4vh;
   margin-top: 2vh;
   text-align: center;
 }
 
-.text {
-  color: #e7f2fa;
+.context {
+  text-align: center;
+  font-family: "Avro";
+  color: #cbdce1;
+  margin-top: 2vh;
 }
 
-.text2 {
+.context2 {
+  text-align: center;
   font-family: "Avro";
-  position: absolute;
-  top: 13vh;
+  color: #b0e7ee;
+  margin-top: 1.5vh;
 }

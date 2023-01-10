@@ -1,0 +1,44 @@
+.contact-div {
+  position: absolute;
+  height: 90vh;
+  width: 100vw;
+  top: 400vh;
+  background: rgb(0, 26, 43);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 26, 43, 1) 0%,
+    rgba(37, 45, 68, 1) 100%
+  );
+}
+
+.contact-title {
+  position: absolute;
+  height: 20vh;
+  width: 100vw;
+  text-align: center;
+  color: #f7f9fc;
+  text-align: center;
+  position: absolute;
+  top: 12vh;
+  left: 10vw;
+  width: 80vw;
+  font-size: 14vh;
+  font-family: "Cookie";
+}
+
+.linkstyle:link {
+  color: pink;
+  text-decoration: none;
+}
+.linkstyle:visited {
+  color: #aa336a;
+  text-decoration: none;
+}
+.linkstyle:hover {
+  color: pink;
+  text-decoration: underline;
+}
+.linkstyle:active {
+  color: #d70040;
+  text-decoration: underline;
+}

@@ -1,0 +1,87 @@
+@font-face {
+  font-family: "Avro";
+  src: local("Bebas"),
+    url(../../public/Arvo/Arvo-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "AvroBold";
+  src: local("AvroBold"),
+    url(../../public/Arvo/Arvo-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "AvroBoldItalic";
+  src: local("AvroBoldItalic"),
+    url(../../public/Arvo/Arvo-BoldItalic.ttf) format("truetype");
+}
+
+.Projcard {
+  position: relative;
+  height: 80vh;
+  width: 60vw;
+  left: 20vw;
+  right: 20vw;
+  text-align: center;
+  border: 3px solid #e7f2fa;
+  border-radius: 10px;
+  box-sizing: border-box;
+  outline: 0;
+  display: block;
+  background-color: #215f65;
+}
+
+.projimg {
+  height: 40vh;
+}
+
+.chess {
+  height: 30vh;
+}
+
+.chesscontainer {
+  position: absolute;
+  margin-top: 50vh;
+  height: 70vh;
+}
+
+.projimg2 {
+  margin-left: 0.3vw;
+  height: 40vh;
+}
+
+#proj1 {
+  top: 35vh;
+}
+
+#proj2 {
+  top: 75vh;
+}
+
+.projtitle {
+  font-family: "AvroBold";
+  font-size: 7vh;
+  color: #e4fcff;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+
+.projbody {
+  font-family: "Avro";
+  color: #b0e7ee;
+  margin-top: 1vh;
+  font-size: 3vh;
+  margin-left: 8vw;
+  margin-right: 8vw;
+  text-align: left;
+}
+
+.projsub {
+  font-family: "AvroBoldItalic";
+  color: #263548;
+  margin-top: 2vh;
+  font-size: 4.5vh;
+  margin-left: 8vw;
+  margin-right: 8vw;
+  text-align: left;
+}

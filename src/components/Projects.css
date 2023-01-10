@@ -1,0 +1,16 @@
+.projects-div {
+  height: 20vh;
+  width: 100vw;
+  position: relative;
+}
+
+.projects-title {
+  color: #f7f9fc;
+  text-align: center;
+  position: absolute;
+  top: 16vh;
+  left: 10vw;
+  width: 80vw;
+  font-size: 12vh;
+  font-family: "Cookie";
+}

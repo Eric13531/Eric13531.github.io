@@ -11,7 +11,7 @@ export default function Card(props) {
     group = "smallCard";
   } else if (props.name === "card2") {
     title = "Tools";
-    text = "Visual Studio Code, NetBeans, Eclipse, Jest";
+    text = "Visual Studio Code, NetBeans, Eclipse, Jest, Github";
     group = "smallCard";
   } else if (props.name === "card3") {
     title = "";
@@ -26,7 +26,7 @@ export default function Card(props) {
   }
   return (
     <div className="card" id={props.name}>
-      <img></img>
+      {props.imgSrc}
       <div className="text title">{title}</div>
       <div className={`text ${group}`}>{text}</div>
       <div className={`text  text2 ${group}`}>{text2}</div>

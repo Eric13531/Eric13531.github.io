@@ -1,7 +1,13 @@
 .skills-div {
   height: 100vh;
   width: 100vw;
-  position: absolute;
+  position: relative;
+}
+
+@font-face {
+  font-family: "Cookie";
+  src: local("Cookie"),
+    url(../../public/Cookie/Cookie-Regular.ttf) format("truetype");
 }
 
 @font-face {
@@ -18,5 +24,5 @@
   left: 10vw;
   width: 80vw;
   font-size: 12vh;
-  font-family: "Bebas";
+  font-family: "Cookie";
 }

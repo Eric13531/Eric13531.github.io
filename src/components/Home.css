@@ -19,7 +19,6 @@
 .body-font {
   font-family: "Bebas";
   color: #e7f2fa;
-  background: rgb(0, 0, 0, 0.1);
   padding-right: 0vw;
   padding-left: 0vw;
   margin-right: 0vw;
@@ -34,7 +33,7 @@
   font-size: 20vh;
   height: auto;
   padding-top: 25vh;
-  margin: 0vh 0 0 5.5vw;
+  margin: 0vh 0 0 7.65vw;
 }
 
 .h2font {
@@ -44,8 +43,8 @@
   font-size: 8vh;
   margin-top: 0vh;
   margin-bottom: 0;
-  padding-right: 0vw;
-  padding-left: 6vw;
+  padding-right: 8vw;
+  padding-left: 8vw;
   margin-right: 0vw;
   margin-left: 0vw;
 }

@@ -2,6 +2,8 @@ import "./Page.css";
 import Home from "./Home.js";
 import Header from "./Header.js";
 import Skills from "./Skills.js";
+import Projects from "./Projects.js";
+import Contact from "./Contact.js";
 
 export default function Body() {
   return (
@@ -21,6 +23,8 @@ export default function Body() {
       <Header></Header>
       <Home></Home>
       <Skills></Skills>
+      <Projects></Projects>
+      <Contact></Contact>
     </div>
   );
 }
