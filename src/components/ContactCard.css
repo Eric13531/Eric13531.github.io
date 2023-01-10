@@ -10,50 +10,124 @@
     url(../../public/Arvo/Arvo-Bold.ttf) format("truetype");
 }
 
-.concard {
-  position: relative;
-  height: 25vh;
-  width: 20vw;
-  border: 1.5px solid #e7f2fa;
-  border-radius: 10px;
-  box-sizing: border-box;
-  outline: 0;
-  display: block;
-  top: 40vh;
+@media only screen and (max-width: 900px) {
+  #con1 {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 22vh;
+    height: 18vh;
+    width: 65vw;
+  }
+
+  #con2 {
+    position: relative;
+
+    margin-left: auto;
+    margin-right: auto;
+    height: 18vh;
+    width: 65vw;
+  }
+
+  #con3 {
+    position: relative;
+
+    margin-left: auto;
+    margin-right: auto;
+    height: 18vh;
+    width: 65vw;
+  }
+
+  .concard {
+    position: relative;
+    border: 1.5px solid #e7f2fa;
+    border-radius: 10px;
+    box-sizing: border-box;
+    outline: 0;
+    margin-bottom: 4vh;
+  }
+
+  .contitle {
+    color: #e7f2fa;
+    font-family: "AvroBold";
+    font-size: min(3.2vh, 2.56vw);
+    margin-top: 2vh;
+    text-align: center;
+  }
+
+  .context {
+    text-align: center;
+    font-family: "Avro";
+    color: #cbdce1;
+    margin-top: 2vh;
+  }
+
+  .context2 {
+    text-align: center;
+    font-family: "Avro";
+    color: #b0e7ee;
+    margin-top: 1.5vh;
+  }
+
+  .con-text {
+    margin-left: 0.5vh;
+    margin-right: 0.5vh;
+  }
 }
 
-#con1 {
-  position: absolute;
-  left: 10vw;
-}
+@media only screen and (min-width: 900px) {
+  .concard {
+    position: relative;
+    height: 25vh;
+    width: 23vw;
+    border: 1.5px solid #e7f2fa;
+    border-radius: 10px;
+    box-sizing: border-box;
+    outline: 0;
+    display: block;
+    top: 40vh;
+  }
 
-#con2 {
-  position: absolute;
-  left: 40vw;
-}
+  #con1 {
+    position: absolute;
+    left: 10vw;
+  }
 
-#con3 {
-  position: absolute;
-  right: 10vw;
-}
-.contitle {
-  color: #e7f2fa;
-  font-family: "AvroBold";
-  font-size: 3.2vh;
-  margin-top: 2vh;
-  text-align: center;
-}
+  #con2 {
+    position: relative;
+    margin: auto;
+  }
 
-.context {
-  text-align: center;
-  font-family: "Avro";
-  color: #cbdce1;
-  margin-top: 2vh;
-}
+  #con3 {
+    position: absolute;
+    right: 10vw;
+  }
+  .contitle {
+    color: #e7f2fa;
+    font-family: "AvroBold";
+    font-size: min(3.2vh, 2.56vw);
+    margin-top: 2vh;
+    text-align: center;
+  }
 
-.context2 {
-  text-align: center;
-  font-family: "Avro";
-  color: #b0e7ee;
-  margin-top: 1.5vh;
+  .context {
+    text-align: center;
+    font-family: "Avro";
+    color: #cbdce1;
+    margin-top: 2vh;
+    font-size: min(2.1vh, 1.62vw);
+  }
+
+  .context2 {
+    text-align: center;
+    font-family: "Avro";
+    color: #b0e7ee;
+    margin-top: 1.5vh;
+    font-size: min(2.1vh, 1.62vw);
+  }
+
+  .con-text {
+    margin-left: 0.5vh;
+    margin-right: 0.5vh;
+  }
 }

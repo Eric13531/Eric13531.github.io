@@ -1,3 +1,7 @@
+.app-div {
+  scroll-behavior: smooth;
+}
+
 /*@font-face {
   font-family: "Bebas";
   src: local("Bebas"), url(../public/BebasNeue-Regular.ttf) format("truetype");

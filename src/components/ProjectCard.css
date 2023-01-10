@@ -16,35 +16,93 @@
     url(../../public/Arvo/Arvo-BoldItalic.ttf) format("truetype");
 }
 
-.Projcard {
-  position: relative;
-  height: 80vh;
-  width: 60vw;
-  left: 20vw;
-  right: 20vw;
-  text-align: center;
-  border: 3px solid #e7f2fa;
-  border-radius: 10px;
-  box-sizing: border-box;
-  outline: 0;
-  display: block;
-  background-color: #215f65;
-}
-
-.projimg {
-  height: 40vh;
-}
-
-.chess {
-  height: 30vh;
+:root {
+  --origsize: 65vw;
 }
 
 .chesscontainer {
-  position: absolute;
-  margin-top: 50vh;
-  height: 70vh;
+  height: auto;
 }
 
+.chess {
+  margin-left: 5vw;
+  margin-right: 5vw;
+  max-width: 80%;
+}
+@media only screen and (max-width: 800px) {
+  .Projcard {
+    position: relative;
+    height: auto;
+    width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border: 3px solid #e7f2fa;
+    border-radius: 10px;
+    box-sizing: border-box;
+    outline: 0;
+    display: block;
+    background-color: #215f65;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .Projcard {
+    position: relative;
+    height: min(75vh, 65vw);
+    width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border: 3px solid #e7f2fa;
+    border-radius: 10px;
+    box-sizing: border-box;
+    outline: 0;
+    display: block;
+    background-color: red;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .Projcard {
+    position: relative;
+    height: min(75vh, 72vw);
+    width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border: 3px solid #e7f2fa;
+    border-radius: 10px;
+    box-sizing: border-box;
+    outline: 0;
+    display: block;
+    background-color: #215f65;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .projimg {
+    height: min(36vh, 36vw);
+  }
+
+  .projimg2 {
+    display: none;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .projimg {
+    height: 40vh;
+  }
+
+  .projimg2 {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .projimg {
+    height: 40vh;
+  }
+}
 .projimg2 {
   margin-left: 0.3vw;
   height: 40vh;
@@ -52,35 +110,36 @@
 
 #proj1 {
   top: 35vh;
+  margin-bottom: 40vh;
 }
 
 #proj2 {
-  top: 75vh;
 }
 
 .projtitle {
   font-family: "AvroBold";
-  font-size: 7vh;
+  font-size: min(6vh, 5vw);
   color: #e4fcff;
-  margin-top: 1vh;
+  margin-top: calc(1vh);
   margin-bottom: 1vh;
 }
 
 .projbody {
   font-family: "Avro";
   color: #b0e7ee;
-  margin-top: 1vh;
-  font-size: 3vh;
+  margin-top: 1.5vh;
+  font-size: min(3vh, 2.4vw);
   margin-left: 8vw;
   margin-right: 8vw;
   text-align: left;
+  margin-bottom: 1.5vh;
 }
 
 .projsub {
   font-family: "AvroBoldItalic";
   color: #263548;
   margin-top: 2vh;
-  font-size: 4.5vh;
+  font-size: min(4.5vh, 3.6vw);
   margin-left: 8vw;
   margin-right: 8vw;
   text-align: left;

@@ -5,8 +5,8 @@ export default function ContactCard(props) {
     <div className="concard" id={props.name}>
       {props.imgSrc}
       <div className="contitle ">{props.title}</div>
-      <div className="context">{props.link}</div>
-      <div className="context2">{props.body}</div>
+      <div className="con-text context">{props.link}</div>
+      <div className="con-text context2">{props.body}</div>
     </div>
   );
 }

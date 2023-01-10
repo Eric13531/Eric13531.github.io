@@ -32,17 +32,17 @@
   position: absolute;
   top: 10vh;
   text-align: center;
-  font-size: 2.5vh;
+  font-size: min(2.5vh, 2vw);
   padding-left: 4vw;
   padding-right: 4vw;
 }
 
 .bigCard {
   font-family: "Avro";
-  font-size: 3.2vh;
+  font-size: min(2.8vh, 2.5vw);
   text-align: left;
   position: absolute;
-  padding-top: 0.8vh;
+  padding-top: 0.5vh;
 
   padding-left: 3vw;
   padding-right: 3vw;
@@ -65,7 +65,7 @@
 
 .title {
   font-family: "AvroBold";
-  font-size: 4vh;
+  font-size: min(4vh, 3.2vw);
   margin-top: 2vh;
   text-align: center;
 }
@@ -77,5 +77,5 @@
 .text2 {
   font-family: "Avro";
   position: absolute;
-  top: 13vh;
+  top: 14vh;
 }

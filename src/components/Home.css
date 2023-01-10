@@ -30,9 +30,9 @@
   display: block;
   font-family: "BebasBold";
   color: #f1f1ef;
-  font-size: 20vh;
+  font-size: min(20vh, 18vw);
   height: auto;
-  padding-top: 25vh;
+  padding-top: calc(45vh - min(20vh, 18vw));
   margin: 0vh 0 0 7.65vw;
 }
 
@@ -40,7 +40,7 @@
   position: relative;
   display: block;
   height: auto;
-  font-size: 8vh;
+  font-size: min(8vh, 6.4vw);
   margin-top: 0vh;
   margin-bottom: 0;
   padding-right: 8vw;

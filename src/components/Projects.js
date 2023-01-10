@@ -17,7 +17,7 @@ export default function Projects() {
       <ProjectCard
         name="proj2"
         title="Chess Simulator"
-        body="This is a C++ program that simulates a chess game virtually. This application has automatic check and checkmate detection implmented"
+        body="This is a C++ program that simulates a chess game virtually. This application has automatic check and checkmate detection implemented"
         imgSrc="/chess_screenshot.png"
         repoUrl=""
         chessId="chess"

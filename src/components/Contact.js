@@ -15,7 +15,7 @@ export default function Contact() {
       />
       <ContactCard
         name="con2"
-        title="Github"
+        title="Resume"
         link=<a
           className="linkstyle"
           href="/resume.pdf"

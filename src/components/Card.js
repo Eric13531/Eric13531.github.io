@@ -1,17 +1,16 @@
 import "./Card.css";
 
 export default function Card(props) {
-  console.log(props.name);
   let title, text, group;
   let text2;
   if (props.name === "card1") {
     title = "Languages";
-    text =
-      "Python, Java, C++, HTML, CSS, JavaScript, React.js, Node.js, SQL, Git";
+    text = "Python, Java, C/C++, HTML, CSS, JavaScript, SQL";
     group = "smallCard";
   } else if (props.name === "card2") {
     title = "Tools";
-    text = "Visual Studio Code, NetBeans, Eclipse, Jest, Github";
+    text =
+      "Visual Studio Code, React.js, Node.js, Git, Github, NetBeans, Eclipse, Jest";
     group = "smallCard";
   } else if (props.name === "card3") {
     title = "";

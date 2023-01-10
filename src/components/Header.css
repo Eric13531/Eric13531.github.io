@@ -23,14 +23,14 @@
 .link {
   font-family: "Noto Sans Mono", monospace;
   display: inline-block;
-  padding-top: 2.2vh;
+  padding-top: calc(2.2vh + 2.9vh - (min(4vh, 3.2vw) / 1.4));
   padding-left: 4vw;
-  font-size: 4vh;
+  font-size: min(4vh, 3.2vw);
 }
 
 .home-link {
   margin-right: 1vw;
-  font-size: 4.1vh;
+  font-size: min(4.1vh, 3.28vw);
   padding-left: 7.9vw;
 }
 
