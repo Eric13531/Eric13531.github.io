@@ -20,10 +20,6 @@
   --origsize: 65vw;
 }
 
-.chesscontainer {
-  height: auto;
-}
-
 .chess {
   margin-left: 5vw;
   margin-right: 5vw;
@@ -58,7 +54,7 @@
     box-sizing: border-box;
     outline: 0;
     display: block;
-    background-color: red;
+    background-color: #215f65;
   }
 }
 
@@ -81,7 +77,7 @@
 
 @media only screen and (max-width: 800px) {
   .projimg {
-    height: min(36vh, 36vw);
+    height: min(40vh, 36vw);
   }
 
   .projimg2 {
@@ -90,7 +86,7 @@
 }
 @media only screen and (min-width: 800px) {
   .projimg {
-    height: 40vh;
+    height: min(40vh, 36vw);
   }
 
   .projimg2 {
@@ -101,6 +97,9 @@
 @media only screen and (min-width: 900px) {
   .projimg {
     height: 40vh;
+  }
+  .projimg2 {
+    display: inline;
   }
 }
 .projimg2 {
@@ -133,6 +132,10 @@
   margin-right: 8vw;
   text-align: left;
   margin-bottom: 1.5vh;
+}
+
+.chesscontainer {
+  height: auto;
 }
 
 .projsub {

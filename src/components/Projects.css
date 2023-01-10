@@ -11,6 +11,6 @@
   top: 16vh;
   left: 10vw;
   width: 80vw;
-  font-size: 12vh;
+  font-size: min(12vh, 11vw);
   font-family: "Cookie";
 }
