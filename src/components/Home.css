@@ -5,11 +5,13 @@
 }
 
 .fader-container {
-  margin: 30px 0;
-  font-weight: bold;
-  display: flex;
+  display: block;
   flex-direction: row;
   justify-content: space-between;
+  height: auto;
+  width: auto;
+  margin-left: 8vw;
+  margin-right: 8vw;
 }
 
 .body-font {
@@ -33,17 +35,20 @@
 
 .h2font {
   position: relative;
-  display: inline-flex;
+  display: inline;
   flex-direction: row;
+  word-wrap: normal;
+
   width: auto;
   height: auto;
   font-size: min(8vh, 6.4vw);
-  margin-top: 0vh;
-  margin-bottom: 0;
-  padding-right: 8vw;
-  padding-left: 8vw;
-  margin-right: 0vw;
-  margin-left: 0vw;
+
+  font-family: "Mont";
+  color: #e7f2fa;
+}
+
+.bold-font {
+  font-weight: bold;
 }
 
 /*.h3font {

@@ -1,0 +1,16 @@
+.fcont {
+  box-sizing: border-box;
+  border: 0 solid;
+  position: relative;
+  display: block;
+
+  font-family: "MontT";
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  color: #f1f1ef;
+  font-size: 8vh;
+  height: auto;
+  padding-top: 2vh;
+  padding-bottom: 8vh;
+  margin: 0vh 0 0 7.1vw;
+}

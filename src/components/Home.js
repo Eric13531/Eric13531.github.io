@@ -1,5 +1,6 @@
 import "./Home.css";
 import Fader from "./Fader";
+import FaderContainer from "./fadertest/FaderContainer";
 
 export default function Home() {
   return (
@@ -11,18 +12,15 @@ export default function Home() {
         My name is Eric Zhang and I'm a software developer.
       </h2>*/}
       <Fader text2="Hello," styles="h1font" />
+
       <span className="fader-container">
-        <Fader
-          text2={"My name is Eric Zhang and I'm a software developer."}
-          time={450}
-          styles="body-font h2font"
-        />
-        {/*<Fader text2="Eric Zhang" time={600} styles="body-font h2font" />
+        <Fader text2={"My name is "} time={600} styles="h2font" />
+        <Fader text2="Eric Zhang" time={1000} styles="h2font bold-font" />
         <Fader
           text2=" and I'm a software developer."
-          time={800}
-          styles="body-font h2font"
-        />*/}
+          time={1500}
+          styles="h2font"
+        />
       </span>
       {/*<h3 className="body-font h3font">
         I love computer science and coding. I do computing competitions and I
