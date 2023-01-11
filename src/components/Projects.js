@@ -8,7 +8,7 @@ export default function Projects() {
       <ProjectCard
         name="proj1"
         title="Bullet Heaven Game"
-        body="Bullet Heaven is a 2D game writtin in Java, featuring a GUI implemented with the Java Swing API. 
+        body="Bullet Heaven is a 2D game written in Java, featuring a GUI implemented with the Java Swing API. 
         "
         imgSrc="/spaceship_game.png"
         repoUrl=""
