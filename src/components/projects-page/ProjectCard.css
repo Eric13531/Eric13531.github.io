@@ -1,19 +1,26 @@
 @font-face {
   font-family: "Avro";
   src: local("Bebas"),
-    url(../../public/Arvo/Arvo-Regular.ttf) format("truetype");
+    url(../../../public/Arvo/Arvo-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "MontBH";
+  src: local("Bebas"),
+    url(../../../public/Montserrat/static/Montserrat-BoldItalic.ttf)
+      format("truetype");
 }
 
 @font-face {
   font-family: "AvroBold";
   src: local("AvroBold"),
-    url(../../public/Arvo/Arvo-Bold.ttf) format("truetype");
+    url(../../../public/Arvo/Arvo-Bold.ttf) format("truetype");
 }
 
 @font-face {
   font-family: "AvroBoldItalic";
   src: local("AvroBoldItalic"),
-    url(../../public/Arvo/Arvo-BoldItalic.ttf) format("truetype");
+    url(../../../public/Arvo/Arvo-BoldItalic.ttf) format("truetype");
 }
 
 :root {
@@ -116,7 +123,9 @@
 }
 
 .projtitle {
-  font-family: "AvroBold";
+  font-family: "MontH";
+  font-variation-settings: "wght" 550;
+
   font-size: min(6vh, 5vw);
   color: #e4fcff;
   margin-top: calc(1vh);
@@ -124,10 +133,10 @@
 }
 
 .projbody {
-  font-family: "Avro";
+  font-family: "Mont";
   color: #b0e7ee;
   margin-top: 1.5vh;
-  font-size: min(3vh, 2.4vw);
+  font-size: min(3.2vh, 2.4vw);
   margin-left: 8vw;
   margin-right: 8vw;
   text-align: left;
@@ -139,7 +148,7 @@
 }
 
 .projsub {
-  font-family: "AvroBoldItalic";
+  font-family: "MontBH";
   color: #263548;
   margin-top: 2vh;
   font-size: min(4.5vh, 3.6vw);

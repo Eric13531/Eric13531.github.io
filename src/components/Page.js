@@ -1,9 +1,9 @@
 import "./Page.css";
 import Home from "./Home.js";
 import Header from "./Header.js";
-import Skills from "./Skills.js";
-import Projects from "./Projects.js";
-import Contact from "./Contact.js";
+import Skills from "./Skills-page/Skills.js";
+import Projects from "./projects-page/Projects";
+import Contact from "./contact-page/Contact.js";
 
 export default function Body() {
   return (

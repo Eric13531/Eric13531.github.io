@@ -1,112 +1,61 @@
-.app-div {
-  scroll-behavior: smooth;
-}
-
-/*@font-face {
-  font-family: "Bebas";
-  src: local("Bebas"), url(../public/BebasNeue-Regular.ttf) format("truetype");
+@font-face {
+  font-family: "Avro";
+  src: local("Bebas"), url(../public/Arvo/Arvo-Regular.ttf) format("truetype");
 }
 
 @font-face {
-  font-family: "BebasBold";
-  src: local("BebasBold"), url(../public/BebasNeue-Bold.ttf) format("truetype");
+  font-family: "AvroBold";
+  src: local("BebasBold"), url(../public/Arvo/Arvo-Bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Avro";
+  src: local("Bebas"), url(../public/Arvo/Arvo-Regular.ttf) format("truetype");
 }
 
-.intro {
-  height: 75vh;
+@font-face {
+  font-family: "MontBH";
+  src: local("Bebas"),
+    url(../public/Montserrat/static/Montserrat-BoldItalic.ttf)
+      format("truetype");
 }
 
-.h1font {
-  font-family: "BebasBold";
-  color: #f1f1ef;
-  height: 100px;
-  font-size: 100px;
-  border: 4px;
-  margin: 150px 0px 25px 80px;
+@font-face {
+  font-family: "AvroBold";
+  src: local("AvroBold"), url(../public/Arvo/Arvo-Bold.ttf) format("truetype");
 }
 
-.h2font {
-  font-family: "Bebas";
-  color: #c7dad4;
-  background: rgb(0, 0, 0, 0.1);
-  margin-left: 80px;
-  margin-right: 80px;
-  font-size: 60px;
-  margin-top: 5px;
-  margin-bottom: 0px;
+@font-face {
+  font-family: "AvroBoldItalic";
+  src: local("AvroBoldItalic"),
+    url(../public/Arvo/Arvo-BoldItalic.ttf) format("truetype");
 }
 
-.h3font {
-  font-family: "Bebas";
-  color: #c7dad4;
-  background: rgb(0, 0, 0, 0.1);
-  margin-left: 80px;
-  margin-right: 80px;
-  font-size: 42px;
-  margin-top: 5px;
+@font-face {
+  font-family: "MontH";
+  src: local("MontH"),
+    url(../public/Montserrat/Montserrat-VariableFont_wght.ttf)
+      format("truetype");
+}
+@font-face {
+  font-family: "Cookie";
+  src: local("Cookie"),
+    url(../public/Cookie/Cookie-Regular.ttf) format("truetype");
 }
 
-/*.headerFont{
-  font-family: "BebasBold";
-  font-size: 40px;
-  color: #beaebd;
+@font-face {
+  font-family: "Mont";
+  src: local("Mont"),
+    url(../public/Montserrat/static/Montserrat-Regular.ttf) format("truetype");
 }
 
-#topHeader{
-  background-color: #25364F;
-  height: 60px;
-  line-height: 60px;
-  border: 2px;
-  margin: 0px 0px 0px 0px;
-  width: 100%;
-  font-size: 40px;
-
-  //border: 1px solid red;
-  text-align: center;
-}
-*/
-
-/*body {
-  background-color: #2f414f;
-  background-image: url(../public/mountain.png);
-}/*
-
-/*.App {
-  text-align: center;
+@font-face {
+  font-family: "MontB";
+  src: local("MontB"),
+    url(../public/Montserrat/static/Montserrat-Bold.ttf) format("truetype");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: "MontT";
+  src: local("MontB"),
+    url(../public/Montserrat/static/Montserrat-Thin.ttf) format("truetype");
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-*/

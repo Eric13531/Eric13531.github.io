@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "MontH";
+  src: local("MontH"),
+    url(../../public/Montserrat/Montserrat-VariableFont_wght.ttf)
+      format("truetype");
+}
+
 .header {
   height: 10vh;
   width: 100vw;
@@ -21,7 +28,9 @@
 }
 
 .link {
-  font-family: "Noto Sans Mono", monospace;
+  font-family: "MontH";
+  font-variation-settings: "wght" 180;
+
   display: inline-block;
   padding-top: calc(2.2vh + 2.9vh - (min(4vh, 3.2vw) / 1.4));
   padding-left: 4vw;

@@ -1,13 +1,13 @@
 @font-face {
   font-family: "Avro";
   src: local("Bebas"),
-    url(../../public/Arvo/Arvo-Regular.ttf) format("truetype");
+    url(../../../public/Arvo/Arvo-Regular.ttf) format("truetype");
 }
 
 @font-face {
   font-family: "AvroBold";
   src: local("BebasBold"),
-    url(../../public/Arvo/Arvo-Bold.ttf) format("truetype");
+    url(../../../public/Arvo/Arvo-Bold.ttf) format("truetype");
 }
 
 @media only screen and (max-width: 900px) {
@@ -49,7 +49,7 @@
 
   .contitle {
     color: #e7f2fa;
-    font-family: "AvroBold";
+    font-family: "MontB";
     font-size: min(3.2vh, 2.56vw);
     margin-top: 2vh;
     text-align: center;
@@ -57,14 +57,14 @@
 
   .context {
     text-align: center;
-    font-family: "Avro";
+    font-family: "Mont";
     color: #cbdce1;
     margin-top: 2vh;
   }
 
   .context2 {
     text-align: center;
-    font-family: "Avro";
+    font-family: "Mont";
     color: #b0e7ee;
     margin-top: 1.5vh;
   }
@@ -104,7 +104,7 @@
   }
   .contitle {
     color: #e7f2fa;
-    font-family: "AvroBold";
+    font-family: "MontB";
     font-size: min(3.2vh, 2.56vw);
     margin-top: 2vh;
     text-align: center;
@@ -112,7 +112,7 @@
 
   .context {
     text-align: center;
-    font-family: "Avro";
+    font-family: "Mont";
     color: #cbdce1;
     margin-top: 2vh;
     font-size: min(2.1vh, 1.62vw);
@@ -120,7 +120,7 @@
 
   .context2 {
     text-align: center;
-    font-family: "Avro";
+    font-family: "Mont";
     color: #b0e7ee;
     margin-top: 1.5vh;
     font-size: min(2.1vh, 1.62vw);

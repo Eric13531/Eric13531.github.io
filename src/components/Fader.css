@@ -1,0 +1,15 @@
+.pause {
+  opacity: 0;
+}
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+
+.visible {
+  opacity: 1;
+}
+.fade-out {
+  transition: opacity 1s ease;
+}

@@ -3,7 +3,6 @@ import "./ProjectCard.css";
 export default function ProjectCard(props) {
   let optImg;
   if (props.name === "proj1") {
-    console.log("img loaded?");
     optImg = (
       <img
         className="projimg2"
