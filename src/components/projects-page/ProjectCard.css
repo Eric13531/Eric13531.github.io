@@ -1,27 +1,3 @@
-@font-face {
-  font-family: "Avro";
-  src: local("Bebas"),
-    url(../../../public/Arvo/Arvo-Regular.ttf) format("truetype");
-}
-
-@font-face {
-  font-family: "MontBH";
-  src: local("Bebas"),
-    url(../../../public/Montserrat/static/Montserrat-BoldItalic.ttf)
-      format("truetype");
-}
-
-@font-face {
-  font-family: "AvroBold";
-  src: local("AvroBold"),
-    url(../../../public/Arvo/Arvo-Bold.ttf) format("truetype");
-}
-
-@font-face {
-  font-family: "AvroBoldItalic";
-  src: local("AvroBoldItalic"),
-    url(../../../public/Arvo/Arvo-BoldItalic.ttf) format("truetype");
-}
 
 :root {
   --origsize: 65vw;

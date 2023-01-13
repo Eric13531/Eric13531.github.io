@@ -1,4 +1,4 @@
-import Fader from "../Fader";
+import Fader from "../style-components/Fader";
 import "./FaderContainer.css";
 
 export default function FaderContainer() {

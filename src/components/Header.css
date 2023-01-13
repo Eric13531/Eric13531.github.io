@@ -1,15 +1,10 @@
-@font-face {
-  font-family: "MontH";
-  src: local("MontH"),
-    url(../../public/Montserrat/Montserrat-VariableFont_wght.ttf)
-      format("truetype");
-}
-
 .header {
   height: 10vh;
   width: 100vw;
   margin-top: 0px;
   padding-top: 0px;
+
+  display: inline-block;
 
   background: rgb(0, 26, 43);
   background: linear-gradient(
@@ -65,4 +60,30 @@
 .link:active {
   color: #0a467e;
   text-decoration: underline;
+}
+
+.logolink {
+  position: absolute;
+  display: inline-block;
+  height: auto;
+  right: 26vw;
+  width: auto;
+}
+
+.logolink2 {
+  position: absolute;
+  display: inline-block;
+  height: auto;
+  right: 18vw;
+  width: auto;
+}
+
+.headerlogo {
+  top: calc(5.15vh - (min(5vh, 5vw) / 2));
+  position: absolute;
+  display: block;
+  height: min(5vh, 4.2vw);
+  width: auto;
+  filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(500deg)
+    brightness(95%) contrast(80%);
 }

@@ -1,14 +1,4 @@
-@font-face {
-  font-family: "Avro";
-  src: local("Bebas"),
-    url(../../../public/Arvo/Arvo-Regular.ttf) format("truetype");
-}
 
-@font-face {
-  font-family: "AvroBold";
-  src: local("BebasBold"),
-    url(../../../public/Arvo/Arvo-Bold.ttf) format("truetype");
-}
 
 @media only screen and (max-width: 900px) {
   #con1 {

@@ -13,3 +13,12 @@
 .fade-out {
   transition: opacity 1s ease;
 }
+
+.color-in {
+  color: #e7f2fa;
+  transition: color 1s ease;
+}
+.color-out {
+  color: #ffa500;
+  transition: color 1s ease;
+}

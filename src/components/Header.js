@@ -21,6 +21,25 @@ export default function Header() {
       <animated.a href="#contact" className="other-link link">
         Contact
       </animated.a>
+
+      <a
+        href="https://www.linkedin.com/in/ericzhang80/"
+        target="_blank"
+        rel="noreferrer"
+        className="logolink"
+      >
+        {" "}
+        <img src="/linkedin.png" className="headerlogo"></img>
+      </a>
+      <a
+        href="https://github.com/Eric13531"
+        target="_blank"
+        rel="noreferrer"
+        className="logolink2"
+      >
+        {" "}
+        <img src="/github.png" className="headerlogo"></img>
+      </a>
     </div>
   );
 }
