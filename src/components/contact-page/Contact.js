@@ -8,6 +8,8 @@ export default function Contact() {
       <ContactCard
         name="con1"
         title="Email"
+        src="/email.png"
+        icon="fa-solid fa-envelope-open-text"
         link=<a className="linkstyle" href="mailto:eric.zhang3@uwaterloo.ca">
           eric.zhang3@uwaterloo.ca
         </a>
@@ -16,6 +18,7 @@ export default function Contact() {
       <ContactCard
         name="con2"
         title="Resume"
+        src="/resumeimg.png"
         link=<a
           className="linkstyle"
           href="/resume.pdf"
@@ -28,9 +31,17 @@ export default function Contact() {
       />
       <ContactCard
         name="con3"
-        title="Text"
-        link="(+1) 647-687-9812"
-        body="Send me a message"
+        title="Github"
+        src="/github.png"
+        link=<a
+          className="linkstyle"
+          href="https://github.com/Eric13531"
+          target="_blank"
+          rel="noreferrer"
+        >
+          https://github.com/Eric13531
+        </a>
+        body="Check out my Github"
       />
     </div>
   );

@@ -1,0 +1,8 @@
+.color-in {
+  color: #e7f2fa;
+  transition: color 1s ease;
+}
+.color-out {
+  color: #7d858a;
+  transition: color 1s ease;
+}

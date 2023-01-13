@@ -1,6 +1,8 @@
-
-
 @media only screen and (max-width: 900px) {
+  .consym {
+    height: 0;
+    width: 0;
+  }
   #con1 {
     position: relative;
     margin-left: auto;
@@ -40,7 +42,7 @@
   .contitle {
     color: #e7f2fa;
     font-family: "MontB";
-    font-size: min(3.2vh, 2.56vw);
+    font-size: min(3.2vh, 3vw);
     margin-top: 2vh;
     text-align: center;
   }
@@ -66,6 +68,13 @@
 }
 
 @media only screen and (min-width: 900px) {
+  .consym {
+    top: 2.8vh;
+    margin: auto;
+    position: relative;
+    height: 4vh;
+    width: 4vh;
+  }
   .concard {
     position: relative;
     height: 25vh;
@@ -96,7 +105,7 @@
     color: #e7f2fa;
     font-family: "MontB";
     font-size: min(3.2vh, 2.56vw);
-    margin-top: 2vh;
+    margin-top: 3.5vh;
     text-align: center;
   }
 

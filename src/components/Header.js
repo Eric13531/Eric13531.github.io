@@ -29,7 +29,11 @@ export default function Header() {
         className="logolink"
       >
         {" "}
-        <img src="/linkedin.png" className="headerlogo"></img>
+        <img
+          src="/linkedin.png"
+          alt="linkedin logo"
+          className="headerlogo"
+        ></img>
       </a>
       <a
         href="https://github.com/Eric13531"
@@ -38,7 +42,7 @@ export default function Header() {
         className="logolink2"
       >
         {" "}
-        <img src="/github.png" className="headerlogo"></img>
+        <img src="/github.png" alt="github logo" className="headerlogo"></img>
       </a>
     </div>
   );
