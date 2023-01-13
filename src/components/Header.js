@@ -58,11 +58,10 @@ export default function Header(props) {
         rel="noreferrer"
         className="logolink"
       >
-        {" "}
         <img
           src="/linkedin.png"
           alt="linkedin logo"
-          className="headerlogo"
+          className="vertical-center headerlogo"
         ></img>
       </a>
       <a
@@ -73,18 +72,22 @@ export default function Header(props) {
         className="logolink2"
       >
         {" "}
-        <img src="/github.png" alt="github logo" className="headerlogo"></img>
+        <img
+          src="/github.png"
+          alt="github logo"
+          className=" vertical-center headerlogo"
+        ></img>
       </a>
 
       <button
         style={{ background: "transparent", border: "none", zIndex: 100 }}
-        className="logolink3"
+        className="vertical-center logolink3"
         onClick={handleClick}
       ></button>
       <img
         src={props.theme.src}
         alt="dark mode"
-        className="headerlogo moonimg"
+        className="vertical-center headerlogo moonimg"
       ></img>
     </div>
   );

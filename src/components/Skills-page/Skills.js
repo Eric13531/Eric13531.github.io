@@ -8,9 +8,9 @@ export default function Skills(props) {
       <div style={{ color: `${props.theme.sectiontitle}` }} className="about">
         About Me
       </div>
-      <Card name="card1" />
-      <Card name="card2" />
-      <Card name="card3" />
+      <Card theme={props.theme} name="card1" />
+      <Card theme={props.theme} name="card2" />
+      <Card theme={props.theme} name="card3" />
     </div>
   );
 }

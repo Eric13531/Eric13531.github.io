@@ -55,6 +55,12 @@
 }
 
 @font-face {
+  font-family: "MontSB";
+  src: local("MontB"),
+    url(../public/Montserrat/static/Montserrat-SemiBold.ttf) format("truetype");
+}
+
+@font-face {
   font-family: "MontT";
   src: local("MontB"),
     url(../public/Montserrat/static/Montserrat-Thin.ttf) format("truetype");

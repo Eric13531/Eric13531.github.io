@@ -130,3 +130,21 @@
     margin-right: 0.5vh;
   }
 }
+
+.context.dark:link {
+  color: darkgray;
+  text-decoration: none;
+}
+
+.context.dark:visited {
+  color: darkgray;
+  text-decoration: none;
+}
+.context.dark:hover {
+  color: black;
+  text-decoration: none;
+}
+.context.dark:active {
+  color: green;
+  text-decoration: none;
+}

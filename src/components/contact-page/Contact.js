@@ -1,40 +1,61 @@
 import "./Contact.css";
 import ContactCard from "./ContactCard";
 
-export default function Contact() {
+export default function Contact(props) {
   return (
-    <div className="contact-div" id="contact">
-      <div className="contact-title">Contact Me</div>
+    <div
+      style={{
+        background: `linear-gradient(
+        180deg,
+      ${props.theme.concol} 0%,
+      ${props.theme.congrad} 100%
+    )`,
+      }}
+      className="contact-div"
+      id="contact"
+    >
+      <div
+        style={{ color: `${props.theme.sectiontitle}` }}
+        className="contact-title"
+      >
+        Contact Me
+      </div>
       <ContactCard
         name="con1"
+        theme={props.theme}
         title="Email"
         src="/email.png"
         icon="fa-solid fa-envelope-open-text"
-        link=<a className="linkstyle" href="mailto:eric.zhang3@uwaterloo.ca">
+        link=<a
+          className={`${props.theme.darklink} linkstyle`}
+          href="mailto:eric.zhang3@uwaterloo.ca"
+        >
           eric.zhang3@uwaterloo.ca
         </a>
         body="Send me an email"
       />
       <ContactCard
         name="con2"
+        theme={props.theme}
         title="Resume"
         src="/resumeimg.png"
         link=<a
-          className="linkstyle"
+          className={`${props.theme.darklink} linkstyle`}
           href="/resume.pdf"
           target="_blank"
           rel="noreferrer"
         >
-          Open Resume
+          Open
         </a>
         body="View my resume"
       />
       <ContactCard
         name="con3"
+        theme={props.theme}
         title="Github"
         src="/github.png"
         link=<a
-          className="linkstyle"
+          className={`${props.theme.darklink} linkstyle`}
           href="https://github.com/Eric13531"
           target="_blank"
           rel="noreferrer"

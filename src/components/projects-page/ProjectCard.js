@@ -12,9 +12,23 @@ export default function ProjectCard(props) {
     );
   }
   return (
-    <div className={`Projcard ${props.chessId + "container"}`} id={props.name}>
+    <div
+      style={{
+        background: `linear-gradient(
+      160deg,
+      ${props.theme.projstar} 0%,
+      ${props.theme.projstar} 0%,
+      ${props.theme.projend} 100%,
+      ${props.theme.projend} 100%
+    )`,
+      }}
+      className={`Projcard ${props.chessId + "container"}`}
+      id={props.name}
+    >
       <div className=""></div>
-      <div className="projtitle">{props.title}</div>
+      <div style={{ color: `${props.theme.cardtitle}` }} className="projtitle">
+        {props.title}
+      </div>
       <img
         className={`projimg ${props.chessId}`}
         src={`${props.imgSrc}`}
@@ -22,8 +36,12 @@ export default function ProjectCard(props) {
       ></img>
       {optImg}
 
-      <div className="projsub">{props.sub}</div>
-      <div className="projbody">{props.body}</div>
+      <div style={{ color: `${props.theme.projsub}` }} className="projsub">
+        {props.sub}
+      </div>
+      <div style={{ color: `${props.theme.projbody}` }} className="projbody">
+        {props.body}
+      </div>
     </div>
   );
 }

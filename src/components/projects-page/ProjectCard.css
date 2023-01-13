@@ -26,7 +26,7 @@
 @media only screen and (min-width: 800px) {
   .Projcard {
     position: relative;
-    height: min(75vh, 65vw);
+    height: auto;
     width: 60vw;
     margin-left: auto;
     margin-right: auto;
@@ -43,7 +43,7 @@
 @media only screen and (min-width: 900px) {
   .Projcard {
     position: relative;
-    height: min(75vh, 72vw);
+    height: auto;
     width: 60vw;
     margin-left: auto;
     margin-right: auto;
@@ -91,31 +91,32 @@
 
 #proj1 {
   top: 35vh;
-  margin-bottom: 40vh;
+  margin-bottom: 46vh;
 }
 
 #proj2 {
 }
 
 .projtitle {
-  font-family: "MontH";
+  font-family: "AvroBold";
   font-variation-settings: "wght" 550;
 
   font-size: min(6vh, 5vw);
   color: #e4fcff;
-  margin-top: calc(1vh);
+  margin-top: calc(2vh);
   margin-bottom: 1vh;
 }
 
 .projbody {
   font-family: "Mont";
+  display: block;
   color: #b0e7ee;
   margin-top: 1.5vh;
   font-size: min(3.2vh, 2.4vw);
   margin-left: 8vw;
   margin-right: 8vw;
   text-align: left;
-  margin-bottom: 1.5vh;
+  margin-bottom: 2vh;
 }
 
 .chesscontainer {
