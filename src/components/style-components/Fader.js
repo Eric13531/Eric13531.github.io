@@ -1,7 +1,9 @@
 //import "./Home.css";
 import "./Fader.css";
 import ".././Home.css";
-import { useState, PropTypes, useEffect } from "react";
+import { useState, useEffect } from "react";
+import PropTypes from "prop-types";
+import { faPersonPraying } from "@fortawesome/free-solid-svg-icons";
 
 export default function Fader(props) {
   const [fadeProp, setFadeProp] = useState({
@@ -11,17 +13,6 @@ export default function Fader(props) {
   const [colorProp, setColorProp] = useState({
     color: "color-in",
   });
-
-  Fader.defaultProps = {
-    text2: "Hello World!",
-    fadeTime: 0,
-    colorTime: 0,
-  };
-  Fader.propTypes = {
-    text2: PropTypes?.string,
-    fadeTime: PropTypes?.number,
-    colorTime: PropTypes?.number,
-  };
 
   useEffect(() => {
     const timeout = setInterval(() => {
@@ -34,7 +25,6 @@ export default function Fader(props) {
         props.colorTime &&
         props.colorTime !== 0
       ) {
-        console.log(props.colorTime);
         setFadeProp({
           fade: "color-in",
         });
@@ -56,6 +46,21 @@ export default function Fader(props) {
   }, [fadeProp]);
 
   return (
-    <span className={`${fadeProp.fade} ${props.styles}`}>{props.text2}</span>
+    <span
+      className={`${props.theme.darktext} ${fadeProp.fade} ${props.styles}`}
+    >
+      {props.text2}
+    </span>
   );
 }
+
+Fader.propTypes = {
+  text2: PropTypes.string,
+  fadeTime: PropTypes.number,
+  colorTime: PropTypes.number,
+};
+Fader.defaultProps = {
+  text2: "Hello World!",
+  fadeTime: 0,
+  colorTime: 0,
+};

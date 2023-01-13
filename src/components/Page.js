@@ -5,7 +5,24 @@ import Skills from "./Skills-page/Skills.js";
 import Projects from "./projects-page/Projects";
 import Contact from "./contact-page/Contact.js";
 
+import { theme } from "../helper/helper.js";
+import { useState } from "react";
+
 export default function Body() {
+  const [mode, setMode] = useState(theme(false));
+  const [isDarkTheme, setIsDarkTheme] = useState(false);
+
+  const handleClick = () => {
+    console.log(isDarkTheme);
+    if (isDarkTheme) {
+      setIsDarkTheme(false);
+    } else {
+      setIsDarkTheme(true);
+    }
+
+    setMode(theme(!isDarkTheme));
+  };
+
   return (
     /*<div className="home">
       <h1 className="title-font h1font"> Hello, </h1>
@@ -19,12 +36,12 @@ export default function Body() {
         React.js
       </h3>
   </div>*/
-    <div>
-      <Header></Header>
-      <Home></Home>
-      <Skills></Skills>
-      <Projects></Projects>
-      <Contact></Contact>
+    <div style={{ backgroundColor: mode.bg }}>
+      <Header theme={mode} changeTheme={handleClick}></Header>
+      <Home theme={mode}></Home>
+      <Skills theme={mode}></Skills>
+      <Projects theme={mode}></Projects>
+      <Contact theme={mode}></Contact>
     </div>
   );
 }

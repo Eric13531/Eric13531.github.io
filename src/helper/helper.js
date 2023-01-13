@@ -14,7 +14,7 @@ export const theme = (bool) => {
       visitz: "dark grey",
       hoverz: "black",
       activez: "green",
-      filter: "",
+      filter: "none",
       sectiontitle: "black",
       projbg: "grey",
       projbody: "grey",
@@ -26,6 +26,9 @@ export const theme = (bool) => {
       convis: "#aa336a",
       conact: "d70040",
       contacttest: "light grey",
+
+      darklink: "dark",
+      darktext: "darktext",
     };
   } else {
     return {
@@ -45,8 +48,7 @@ export const theme = (bool) => {
       hoverz: "#b4eaee",
       activez: "#0a467e",
       //brightness here
-      filter:
-        "invert(48%) sepia(13%) saturate(3207%) hue-rotate(500deg) brightness(95%) contrast(80%)",
+      filter: "",
       //about, projects, contact title
       sectiontitle: "#f7f9fc",
       projbg: "#215f65",
@@ -60,6 +62,8 @@ export const theme = (bool) => {
       convis: "#aa336a",
       conact: "d70040",
       contacttest: "#cbdce1",
+      darklink: "",
+      darktext: "",
     };
   }
 };

@@ -61,6 +61,24 @@
   text-decoration: underline;
 }
 
+.dark:link {
+  color: darkgray;
+  text-decoration: none;
+}
+
+.dark:visited {
+  color: darkgray;
+  text-decoration: none;
+}
+.dark:hover {
+  color: black;
+  text-decoration: none;
+}
+.dark:active {
+  color: green;
+  text-decoration: none;
+}
+
 .logolink {
   top: calc(5vh - (min(5vh, 4.2vw) / 2));
   position: absolute;

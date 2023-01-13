@@ -2,13 +2,13 @@
   opacity: 0;
 }
 
+.visible {
+  opacity: 1;
+}
+
 .fade-in {
   opacity: 1;
   transition: opacity 1s ease;
-}
-
-.visible {
-  opacity: 1;
 }
 .fade-out {
   transition: opacity 1s ease;
@@ -20,5 +20,25 @@
 }
 .color-out {
   color: #ffa500;
+  transition: color 1s ease;
+}
+
+.darktext.h1font {
+  color: black;
+  transition: color 1s ease;
+}
+
+.darktext.h2font {
+  color: black;
+  transition: color 1s ease;
+}
+
+.darktext.color-in {
+  color: black;
+  transition: color 1s ease;
+}
+
+.darktext.color-out {
+  color: orange;
   transition: color 1s ease;
 }

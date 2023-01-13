@@ -1,37 +1,58 @@
 import "./Header.css";
-import { useState } from "react";
 import { useSpring, animated } from "react-spring";
+import { faPersonPraying } from "@fortawesome/free-solid-svg-icons";
 
-import { theme } from "../helper/helper.js";
-
-export default function Header() {
-  const [mode, setMode] = useState(true);
-
+export default function Header(props) {
   const springs = useSpring({
     from: { x: 0 },
     to: { x: 100 },
   });
 
   const handleClick = () => {
-    setMode(theme(mode));
+    props.changeTheme();
+    console.log("click receive");
   };
 
   return (
-    <div className="header sticky">
-      <animated.a href="#intro" className="home-link link">
+    <div
+      style={{
+        background: `linear-gradient(
+      90deg,
+      ${props.theme.head1} 0%,
+      ${props.theme.head2} 0%,
+      ${props.theme.head3} 100%,
+      ${props.theme.head4} 100%
+    )`,
+      }}
+      className="header sticky"
+    >
+      <animated.a
+        href="#intro"
+        className={`${props.theme.darklink} home-link link`}
+      >
         Home
       </animated.a>
-      <animated.a href="#skills" className="other-link link">
+      <animated.a
+        href="#skills"
+        className={`${props.theme.darklink} other-link link`}
+      >
         Skills
       </animated.a>
-      <animated.a href="#projects" className="other-link link">
+      <animated.a
+        href="#projects"
+        className={`${props.theme.darklink} other-link link`}
+      >
         Projects
       </animated.a>
-      <animated.a href="#contact" className="other-link link">
+      <animated.a
+        href="#contact"
+        className={`${props.theme.darklink} other-link link`}
+      >
         Contact
       </animated.a>
 
       <a
+        style={{ filter: props.theme.filter }}
         href="https://www.linkedin.com/in/ericzhang80/"
         target="_blank"
         rel="noreferrer"
@@ -45,6 +66,7 @@ export default function Header() {
         ></img>
       </a>
       <a
+        style={{ filter: props.theme.filter }}
         href="https://github.com/Eric13531"
         target="_blank"
         rel="noreferrer"
@@ -55,10 +77,15 @@ export default function Header() {
       </a>
 
       <button
-        style={{ background: "transparent", border: "none" }}
+        style={{ background: "transparent", border: "none", zIndex: 100 }}
         className="logolink3"
+        onClick={handleClick}
       ></button>
-      <img src="/moon.png" alt="dark mode" className="headerlogo moonimg"></img>
+      <img
+        src={props.theme.src}
+        alt="dark mode"
+        className="headerlogo moonimg"
+      ></img>
     </div>
   );
 }
