@@ -6,7 +6,6 @@
 
   display: inline-block;
 
-  background: rgb(0, 26, 43);
   background: linear-gradient(
     90deg,
     rgba(0, 26, 43, 1) 0%,
@@ -63,27 +62,55 @@
 }
 
 .logolink {
+  top: calc(5vh - (min(5vh, 4.2vw) / 2));
   position: absolute;
   display: inline-block;
   height: auto;
-  right: 26vw;
-  width: auto;
+  right: 25vw;
+  width: min(5vh, 4.2vw);
+  filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(500deg)
+    brightness(95%) contrast(80%);
 }
 
 .logolink2 {
+  top: calc(5vh - (min(5vh, 4.2vw) / 2));
   position: absolute;
   display: inline-block;
   height: auto;
-  right: 18vw;
-  width: auto;
+  right: 19vw;
+  width: min(5vh, 4.2vw);
+  filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(500deg)
+    brightness(95%) contrast(80%);
 }
 
 .headerlogo {
-  top: calc(5.15vh - (min(5vh, 5vw) / 2));
   position: absolute;
+  top: 0;
   display: block;
   height: min(5vh, 4.2vw);
-  width: auto;
-  filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(500deg)
-    brightness(95%) contrast(80%);
+  width: min(5vh, 4.2vw);
+}
+
+.logolink3 {
+  top: calc(5vh - (min(5vh, 4.2vw) / 2));
+  position: absolute;
+  height: min(5vh, 4.2vw);
+  display: inline-block;
+  right: 13vw;
+  width: min(5vh, 4.2vw);
+  display: block;
+  height: min(5vh, 4.2vw);
+  width: min(5vh, 4.2vw);
+}
+
+.moonimg {
+  top: calc(5vh - (min(5vh, 4.2vw) / 2));
+  position: absolute;
+  height: min(5vh, 4.2vw);
+  display: inline-block;
+  right: 13vw;
+  width: min(5vh, 4.2vw);
+  display: block;
+  height: min(5vh, 4.2vw);
+  width: min(5vh, 4.2vw);
 }

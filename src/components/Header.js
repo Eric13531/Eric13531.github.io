@@ -1,11 +1,20 @@
 import "./Header.css";
+import { useState } from "react";
 import { useSpring, animated } from "react-spring";
 
+import { theme } from "../helper/helper.js";
+
 export default function Header() {
+  const [mode, setMode] = useState(true);
+
   const springs = useSpring({
     from: { x: 0 },
     to: { x: 100 },
   });
+
+  const handleClick = () => {
+    setMode(theme(mode));
+  };
 
   return (
     <div className="header sticky">
@@ -44,6 +53,12 @@ export default function Header() {
         {" "}
         <img src="/github.png" alt="github logo" className="headerlogo"></img>
       </a>
+
+      <button
+        style={{ background: "transparent", border: "none" }}
+        className="logolink3"
+      ></button>
+      <img src="/moon.png" alt="dark mode" className="headerlogo moonimg"></img>
     </div>
   );
 }
