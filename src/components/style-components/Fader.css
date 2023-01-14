@@ -14,31 +14,35 @@
   transition: opacity 1s ease;
 }
 
+.done-fade {
+  transition: color 2s ease;
+}
+
 .color-in {
   color: #e7f2fa;
-  transition: color 1s ease;
+  transition: color 2s ease;
 }
 .color-out {
   color: #ffa500;
-  transition: color 1s ease;
+  transition: color 2s ease;
 }
 
 .darktext.h1font {
   color: black;
-  transition: color 1s ease;
+  transition: color 2s ease;
 }
 
 .darktext.h2font {
   color: black;
-  transition: color 1s ease;
+  transition: color 2s ease;
 }
 
 .darktext.color-in {
   color: black;
-  transition: color 1s ease;
+  transition: color 2s ease;
 }
 
 .darktext.color-out {
   color: orange;
-  transition: color 1s ease;
+  transition: color 2s ease;
 }

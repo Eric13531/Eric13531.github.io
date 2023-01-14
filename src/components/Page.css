@@ -1,9 +1,9 @@
-
-body {
+.body {
   width: 100vw;
   height: auto;
   position: relative;
   background-color: #001a2b;
+  transition: color 1s ease;
   /*background-image: url(../../public/mountain.png),
     repeating-linear-gradient(
       90deg,

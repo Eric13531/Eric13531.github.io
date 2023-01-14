@@ -9,13 +9,16 @@ export default function Fader(props) {
     fade: "pause",
   });
 
+  const [fadeDelay, setFadeDelay] = useState(0);
+
   useEffect(() => {
     const timeout = setInterval(() => {
-      if (fadeProp.fade === "pause")
+      if (fadeProp.fade === "pause") {
         setFadeProp({
           fade: "fade-in",
         });
-      else if (
+        setFadeDelay(1000);
+      } else if (
         fadeProp.fade === "fade-in" &&
         props.colorTime &&
         props.colorTime !== 0
@@ -23,6 +26,7 @@ export default function Fader(props) {
         setFadeProp({
           fade: "color-in",
         });
+        setFadeDelay(0);
       } else if (
         props.colorTime !== 0 &&
         props.colorTime &&
@@ -31,17 +35,25 @@ export default function Fader(props) {
         setFadeProp({
           fade: "color-out",
         });
+        setFadeDelay(0);
       } else if (props.colorTime && props.colorTime !== 0) {
         setFadeProp({
           fade: "color-in",
         });
+        setFadeDelay(0);
+      } else {
+        setFadeProp({
+          fade: "done-fade",
+        });
+        setFadeDelay(0);
       }
-    }, props.fadeTime);
+    }, Math.max(fadeDelay, props.fadeTime));
     return () => clearInterval(timeout);
   }, [fadeProp]);
 
   return (
     <span
+      style={{ transition: "opacity color 1s ease" }}
       className={`${props.theme.darktext} ${fadeProp.fade} ${props.styles}`}
     >
       {props.text2}

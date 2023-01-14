@@ -46,7 +46,7 @@ export default function Body() {
         React.js
       </h3>
   </div>*/
-    <div style={{ backgroundColor: mode.bg }}>
+    <div style={{ backgroundColor: mode.bg }} className="body">
       <Header theme={mode} changeTheme={handleClick}></Header>
       <Home theme={mode}></Home>
       <Skills theme={mode}></Skills>

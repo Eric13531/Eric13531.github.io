@@ -1,6 +1,6 @@
 import "./Header.css";
 import { useSpring, animated } from "react-spring";
-import { faPersonPraying } from "@fortawesome/free-solid-svg-icons";
+import Fader from "./style-components/Fader";
 
 export default function Header(props) {
   const springs = useSpring({
@@ -84,11 +84,18 @@ export default function Header(props) {
         className="vertical-center logolink3"
         onClick={handleClick}
       ></button>
-      <img
-        src={props.theme.src}
-        alt="dark mode"
-        className="vertical-center headerlogo moonimg"
-      ></img>
+      <Fader
+        theme={props.theme}
+        text2={
+          <img
+            src={props.theme.src}
+            alt="dark mode"
+            className="vertical-center headerlogo moonimg"
+          ></img>
+        }
+        fadeTime={2500}
+        styles=""
+      />
     </div>
   );
 }
