@@ -10,7 +10,6 @@ export default function Header(props) {
 
   const handleClick = () => {
     props.changeTheme();
-    console.log("click receive");
   };
 
   return (
@@ -80,7 +79,12 @@ export default function Header(props) {
       </a>
 
       <button
-        style={{ background: "transparent", border: "none", zIndex: 100 }}
+        style={{
+          background: "transparent",
+          border: "none",
+          zIndex: 100,
+          cursor: "pointer",
+        }}
         className="vertical-center logolink3"
         onClick={handleClick}
       ></button>
@@ -93,7 +97,7 @@ export default function Header(props) {
             className="vertical-center headerlogo moonimg"
           ></img>
         }
-        fadeTime={2500}
+        fadeTime={400}
         styles=""
       />
     </div>
