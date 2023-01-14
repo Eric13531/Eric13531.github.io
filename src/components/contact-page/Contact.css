@@ -59,3 +59,21 @@
   color: #d70040;
   text-decoration: underline;
 }
+
+.dark.linkstyle:link {
+  color: #1e2385;
+  text-decoration: none;
+}
+
+.dark.linkstyle:visited {
+  color: #1e2385;
+  text-decoration: none;
+}
+.dark.linkstyle:hover {
+  color: #767bbc;
+  text-decoration: none;
+}
+.dark.linkstyle:active {
+  color: #0b1e1e;
+  text-decoration: none;
+}

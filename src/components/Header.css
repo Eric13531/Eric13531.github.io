@@ -62,20 +62,20 @@
 }
 
 .dark:link {
-  color: #02020a;
+  color: #1c1c24;
   text-decoration: none;
 }
 
 .dark:visited {
-  color: #02020a;
+  color: #1c1c24;
   text-decoration: none;
 }
 .dark:hover {
-  color: black;
+  color: #616167;
   text-decoration: none;
 }
 .dark:active {
-  color: green;
+  color: black;
   text-decoration: none;
 }
 

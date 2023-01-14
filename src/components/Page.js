@@ -12,6 +12,15 @@ export default function Body() {
   const [mode, setMode] = useState(theme(false));
   const [isDarkTheme, setIsDarkTheme] = useState(false);
 
+  /*if (localStorage.getItem("dark?") === null) {
+    localStorage.setItem("dark?", isDarkTheme);
+  } else {
+    const saved = localStorage.getItem("name");
+    const initialValue = JSON.parse(saved);
+    setIsDarkTheme(initialValue);
+    setMode(theme(initialValue));
+  }
+  */
   const handleClick = () => {
     console.log(isDarkTheme);
     if (isDarkTheme) {
@@ -20,6 +29,7 @@ export default function Body() {
       setIsDarkTheme(true);
     }
 
+    localStorage.setItem("dark?", !isDarkTheme);
     setMode(theme(!isDarkTheme));
   };
 

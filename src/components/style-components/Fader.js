@@ -3,15 +3,10 @@ import "./Fader.css";
 import ".././Home.css";
 import { useState, useEffect } from "react";
 import PropTypes from "prop-types";
-import { faPersonPraying } from "@fortawesome/free-solid-svg-icons";
 
 export default function Fader(props) {
   const [fadeProp, setFadeProp] = useState({
     fade: "pause",
-  });
-
-  const [colorProp, setColorProp] = useState({
-    color: "color-in",
   });
 
   useEffect(() => {
