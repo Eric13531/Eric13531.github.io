@@ -30,6 +30,15 @@ export default function Projects(props) {
         chessId="chess"
         sub="C++"
       />
+      <ProjectCard
+        name="stats"
+        theme={props.theme}
+        title="Website Statistics:"
+        // body="This is a C++ program that simulates a chess game virtually. This application has automatic check and checkmate detection implemented"
+        repoUrl=""
+        chessId="chess"
+        subb={`Clicks: ${props.clickCount}`}
+      />
     </div>
   );
 }

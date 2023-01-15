@@ -95,6 +95,10 @@
 }
 
 #proj2 {
+  margin-bottom: 12vh;
+}
+
+#proj3 {
 }
 
 .projtitle {
@@ -131,4 +135,15 @@
   margin-left: 8vw;
   margin-right: 8vw;
   text-align: left;
+}
+
+.projsubb {
+  font-family: "MontB";
+  color: #263548;
+  margin-top: 2vh;
+  font-size: min(5vh, 4vw);
+  margin-left: 8vw;
+  margin-right: 8vw;
+  text-align: center;
+  margin-bottom: 3vh;
 }

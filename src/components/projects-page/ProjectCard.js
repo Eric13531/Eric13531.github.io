@@ -11,6 +11,19 @@ export default function ProjectCard(props) {
       ></img>
     );
   }
+
+  const produceImg = () => {
+    if (props.title !== "Website Statistics:") {
+      return (
+        <img
+          className={`projimg ${props.chessId}`}
+          src={`${props.imgSrc}`}
+          alt="whoops"
+        ></img>
+      );
+    }
+  };
+
   return (
     <div
       style={{
@@ -29,15 +42,14 @@ export default function ProjectCard(props) {
       <div style={{ color: `${props.theme.cardtitle}` }} className="projtitle">
         {props.title}
       </div>
-      <img
-        className={`projimg ${props.chessId}`}
-        src={`${props.imgSrc}`}
-        alt="whoops"
-      ></img>
+      {produceImg()}
       {optImg}
 
       <div style={{ color: `${props.theme.projsub}` }} className="projsub">
         {props.sub}
+      </div>
+      <div style={{ color: `${props.theme.projsubb}` }} className="projsubb">
+        {props.subb}
       </div>
       <div style={{ color: `${props.theme.projbody}` }} className="projbody">
         {props.body}

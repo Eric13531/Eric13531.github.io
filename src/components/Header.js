@@ -5,39 +5,39 @@ import Fader from "./style-components/Fader";
 import { getDatabase, ref, set, onValue } from "firebase/database";
 
 export default function Header(props) {
-  const [clicks, setClicks] = useState(0);
-  const [ticker, setTicker] = useState(true);
+  // const [clicks, setClicks] = useState(0);
+  // const [ticker, setTicker] = useState(true);
 
-  const springs = useSpring({
-    from: { x: 0 },
-    to: { x: 100 },
-  });
-  const db = getDatabase();
-  const reference = ref(db, "clicks");
+  // const springs = useSpring({
+  //   from: { x: 0 },
+  //   to: { x: 100 },
+  // });
+  // const db = getDatabase();
+  // const reference = ref(db, "clicks");
 
-  var intervalId = window.setInterval(() => {
-    setTicker(!ticker);
-  }, 5000);
+  // var intervalId = window.setInterval(() => {
+  //   setTicker(!ticker);
+  // }, 5000);
 
   const handleClick = async () => {
     props.changeTheme();
 
-    await set(reference, {
-      clicks: clicks + 1,
-    });
-    console.log("Not Ok??");
+    //   await set(reference, {
+    //     clicks: clicks + 1,
+    //   });
+    //   console.log("Not Ok??");
   };
 
-  // const clickCountRef = ref(db, "clicks");
+  // // const clickCountRef = ref(db, "clicks");
 
-  useEffect(() => {
-    onValue(reference, (snapshot) => {
-      const data = snapshot.val();
-      console.log(data);
-      setClicks(data.clicks);
-      // console.log("Ok??");
-    });
-  }, [ticker]);
+  // useEffect(() => {
+  //   onValue(reference, (snapshot) => {
+  //     const data = snapshot.val();
+  //     console.log(data);
+  //     setClicks(data.clicks);
+  //     // console.log("Ok??");
+  //   });
+  // }, [ticker]);
 
   return (
     <div

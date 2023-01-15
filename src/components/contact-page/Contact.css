@@ -1,7 +1,7 @@
 .contact-div {
-  position: absolute;
+  position: relative;
   height: 90vh;
-  width: 100vw;
+  width: auto;
   top: auto;
   background: linear-gradient(
     180deg,
@@ -11,14 +11,14 @@
 }
 @media only screen and (min-width: 900px) {
   .contact-title {
-    position: absolute;
+    position: relative;
     height: 20vh;
-    width: 100vw;
+    width: auto;
     text-align: center;
     color: #f7f9fc;
     text-align: center;
     position: absolute;
-    top: 12vh;
+    top: 8vh;
     left: 10vw;
     width: 80vw;
     font-size: min(14vh, 11.2vw);
@@ -28,14 +28,13 @@
 
 @media only screen and (max-width: 900px) {
   .contact-title {
-    position: absolute;
+    position: relative;
     height: 20vh;
-    width: 100vw;
+    width: auto;
     text-align: center;
     color: #f7f9fc;
     text-align: center;
-    position: absolute;
-    top: calc(12vh + 2vh - (min(14vh, 11.2vw) / 2));
+    top: 8vh;
     left: 10vw;
     width: 80vw;
     font-size: min(14vh, 11.2vw);

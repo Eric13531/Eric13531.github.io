@@ -65,3 +65,8 @@
   src: local("MontB"),
     url(../public/Montserrat/static/Montserrat-Thin.ttf) format("truetype");
 }
+
+.app-div {
+  height: auto;
+  width: auto;
+}

@@ -5,9 +5,13 @@ import "firebase/firestore";
 import "firebase/auth";
 
 import { initializeApp } from "firebase/app";
-import { getDatabase } from "firebase/database";
+import { getDatabase, ref, set, get, onValue } from "firebase/database";
+import { useRef, useEffect, useState } from "react";
 
 function App() {
+  const [clicks, setClicks] = useState(0);
+  const [ticker, setTicker] = useState(true);
+
   const firebaseConfig = {
     // ...
     // The value of `databaseURL` depends on the location of the database
@@ -25,9 +29,53 @@ function App() {
 
   const db = getDatabase(app);
 
+  const boxRef = useRef();
+  const reference = ref(db, "clicks");
+
+  var intervalId = window.setInterval(() => {
+    setTicker(!ticker);
+  }, 10000);
+
+  const handleClick = async () => {
+    let c = getInfo();
+    console.log(c);
+    await set(reference, {
+      clicks: c.clicks + 1,
+    });
+
+    setClicks(c.clicks + 1);
+
+    console.log(clicks);
+    console.log("Not Ok??");
+  };
+
+  window.onclick = (event) => {
+    console.log("click detected");
+    getInfo();
+    handleClick();
+  };
+
+  const getInfo = () => {
+    console.log("triggered");
+    let data = 0;
+    onValue(reference, (snapshot) => {
+      data = snapshot.val();
+      console.log("data: " + data.clicks);
+      setClicks(data.clicks);
+      console.log("Ok??");
+    });
+
+    return data;
+  };
+
+  useEffect(() => {
+    console.log("tick");
+    getInfo();
+  }, [ticker]);
+
   return (
-    <div className="app-div">
-      <Page />
+    <div ref={boxRef} className="app-div">
+      <Page clickCount={clicks} />
     </div>
   );
 }

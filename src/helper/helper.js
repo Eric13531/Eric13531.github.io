@@ -23,6 +23,7 @@ export const theme = (bool) => {
       // 5B85AA
       projbody: "#02020A",
       projsub: "#890620",
+      projsubb: "#890620",
       concol: "#F0EFF4",
       congrad: "#d5aec2",
       conlink: "pink",
@@ -67,6 +68,7 @@ export const theme = (bool) => {
       //context2 too
       projbody: "#b0e7ee",
       projsub: "#6c909d",
+      projsubb: "#b0e7ee",
       concol: "rgba(0, 26, 43, 1) 0%",
       congrad: "rgba(37, 45, 68, 1) 100%",
       conlink: "pink",

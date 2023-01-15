@@ -7,8 +7,9 @@ import Contact from "./contact-page/Contact.js";
 
 import { theme } from "../helper/helper.js";
 import { useState } from "react";
+import { checkPropTypes } from "prop-types";
 
-export default function Body() {
+export default function Body(props) {
   const [mode, setMode] = useState(theme(false));
   const [isDarkTheme, setIsDarkTheme] = useState(false);
 
@@ -54,7 +55,7 @@ export default function Body() {
       <Header theme={mode} changeTheme={handleClick}></Header>
       <Home theme={mode}></Home>
       <Skills theme={mode}></Skills>
-      <Projects theme={mode}></Projects>
+      <Projects clickCount={props.clickCount} theme={mode}></Projects>
       <Contact theme={mode}></Contact>
     </div>
   );
