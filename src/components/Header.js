@@ -1,16 +1,43 @@
 import "./Header.css";
+import { useEffect, useState } from "react";
 import { useSpring, animated } from "react-spring";
 import Fader from "./style-components/Fader";
+import { getDatabase, ref, set, onValue } from "firebase/database";
 
 export default function Header(props) {
+  const [clicks, setClicks] = useState(0);
+  const [ticker, setTicker] = useState(true);
+
   const springs = useSpring({
     from: { x: 0 },
     to: { x: 100 },
   });
+  const db = getDatabase();
+  const reference = ref(db, "clicks");
 
-  const handleClick = () => {
+  var intervalId = window.setInterval(() => {
+    setTicker(!ticker);
+  }, 5000);
+
+  const handleClick = async () => {
     props.changeTheme();
+
+    await set(reference, {
+      clicks: clicks + 1,
+    });
+    console.log("Not Ok??");
   };
+
+  // const clickCountRef = ref(db, "clicks");
+
+  useEffect(() => {
+    onValue(reference, (snapshot) => {
+      const data = snapshot.val();
+      console.log(data);
+      setClicks(data.clicks);
+      // console.log("Ok??");
+    });
+  }, [ticker]);
 
   return (
     <div
@@ -88,6 +115,7 @@ export default function Header(props) {
         className="vertical-center logolink3"
         onClick={handleClick}
       ></button>
+
       <Fader
         theme={props.theme}
         text2={
