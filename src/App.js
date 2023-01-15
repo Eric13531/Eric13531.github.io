@@ -6,10 +6,11 @@ import "firebase/auth";
 
 import { initializeApp } from "firebase/app";
 import { getDatabase, ref, set, get, onValue } from "firebase/database";
-import { useRef, useEffect, useState } from "react";
+import { useRef, useEffect, useState, child } from "react";
 
 function App() {
   const [clicks, setClicks] = useState(0);
+  const [views, setViews] = useState(0);
   const [ticker, setTicker] = useState(true);
 
   const firebaseConfig = {
@@ -30,35 +31,54 @@ function App() {
   const db = getDatabase(app);
 
   const boxRef = useRef();
-  const reference = ref(db, "clicks");
+  const referenceClicks = ref(db, "clicks");
+  const referenceViews = ref(db, "views");
 
-  var intervalId = window.setInterval(() => {
+  const intervalId = window.setInterval(() => {
     setTicker(!ticker);
   }, 10000);
 
   const handleClick = async () => {
-    let c = getInfo();
-    console.log(c);
-    await set(reference, {
+    let c = await getInfoClicks();
+    console.log(c.clicks + "asdf");
+    await set(referenceClicks, {
       clicks: c.clicks + 1,
     });
 
     setClicks(c.clicks + 1);
 
     console.log(clicks);
-    console.log("Not Ok??");
+    console.log("Clicks Ok??");
+  };
+
+  const handleOpen = async () => {
+    let c = await getInfoViews();
+    console.log(c.views + "asdfasdf");
+
+    await set(referenceViews, { views: c.views + 1 });
+
+    setViews(c.views + 1);
+
+    console.log(views);
+    console.log("Views Ok??");
   };
 
   window.onclick = (event) => {
     console.log("click detected");
-    getInfo();
+    getInfoClicks();
     handleClick();
   };
 
-  const getInfo = () => {
+  window.onload = (event) => {
+    console.log("window loaded");
+    getInfoViews();
+    handleOpen();
+  };
+
+  const getInfoClicks = () => {
     console.log("triggered");
     let data = 0;
-    onValue(reference, (snapshot) => {
+    onValue(referenceClicks, (snapshot) => {
       data = snapshot.val();
       console.log("data: " + data.clicks);
       setClicks(data.clicks);
@@ -68,14 +88,34 @@ function App() {
     return data;
   };
 
+  const getInfoViews = async () => {
+    console.log("triggered2");
+    let data = 0;
+    await get(referenceViews)
+      .then((snapshot) => {
+        if (snapshot.exists()) {
+          console.log(snapshot.val());
+          data = snapshot.val();
+        } else {
+          console.log("No data available");
+        }
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+
+    return data;
+  };
+
   useEffect(() => {
     console.log("tick");
-    getInfo();
+    getInfoClicks();
+    getInfoViews();
   }, [ticker]);
 
   return (
     <div ref={boxRef} className="app-div">
-      <Page clickCount={clicks} />
+      <Page clickCount={clicks} viewsCount={views} />
     </div>
   );
 }

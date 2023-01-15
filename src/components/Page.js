@@ -55,7 +55,11 @@ export default function Body(props) {
       <Header theme={mode} changeTheme={handleClick}></Header>
       <Home theme={mode}></Home>
       <Skills theme={mode}></Skills>
-      <Projects clickCount={props.clickCount} theme={mode}></Projects>
+      <Projects
+        clickCount={props.clickCount}
+        viewsCount={props.viewsCount}
+        theme={mode}
+      ></Projects>
       <Contact theme={mode}></Contact>
     </div>
   );

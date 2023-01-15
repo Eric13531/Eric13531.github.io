@@ -48,7 +48,10 @@ export default function ProjectCard(props) {
       <div style={{ color: `${props.theme.projsub}` }} className="projsub">
         {props.sub}
       </div>
-      <div style={{ color: `${props.theme.projsubb}` }} className="projsubb">
+      <div
+        style={{ color: `${props.theme.projsubb}`, whiteSpace: "pre-line" }}
+        className="projsubb"
+      >
         {props.subb}
       </div>
       <div style={{ color: `${props.theme.projbody}` }} className="projbody">

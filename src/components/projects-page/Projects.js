@@ -2,6 +2,11 @@ import "./Projects.css";
 import ProjectCard from "./ProjectCard.js";
 
 export default function Projects(props) {
+  const printStats = () => {
+    return `Views: ${props.viewsCount}
+    Clicks: ${props.clickCount} `;
+  };
+
   return (
     <div className="projects-div" id="projects">
       <div
@@ -37,7 +42,7 @@ export default function Projects(props) {
         // body="This is a C++ program that simulates a chess game virtually. This application has automatic check and checkmate detection implemented"
         repoUrl=""
         chessId="chess"
-        subb={`Clicks: ${props.clickCount}`}
+        subb={printStats()}
       />
     </div>
   );
