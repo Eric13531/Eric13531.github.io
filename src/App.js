@@ -11,7 +11,6 @@ import { useRef, useEffect, useState, child } from "react";
 function App() {
   const [clicks, setClicks] = useState(0);
   const [views, setViews] = useState(0);
-  const [ticker, setTicker] = useState(true);
 
   const firebaseConfig = {
     // ...
@@ -34,70 +33,50 @@ function App() {
   const referenceClicks = ref(db, "clicks");
   const referenceViews = ref(db, "views");
 
-  const intervalId = window.setInterval(() => {
-    setTicker(!ticker);
-  }, 10000);
-
   const handleClick = async () => {
     let c = await getInfoClicks();
-    console.log(c.clicks + "asdf");
     await set(referenceClicks, {
       clicks: c.clicks + 1,
     });
 
     setClicks(c.clicks + 1);
-
-    console.log(clicks);
-    console.log("Clicks Ok??");
   };
 
   const handleOpen = async () => {
     let c = await getInfoViews();
-    console.log(c.views + "asdfasdf");
 
     await set(referenceViews, { views: c.views + 1 });
 
     setViews(c.views + 1);
-
-    console.log(views);
-    console.log("Views Ok??");
   };
 
   window.onclick = (event) => {
-    console.log("click detected");
     getInfoClicks();
     handleClick();
   };
 
   window.onload = (event) => {
-    console.log("window loaded");
     getInfoViews();
     handleOpen();
   };
 
   const getInfoClicks = () => {
-    console.log("triggered");
     let data = 0;
     onValue(referenceClicks, (snapshot) => {
       data = snapshot.val();
-      console.log("data: " + data.clicks);
       setClicks(data.clicks);
-      console.log("Ok??");
     });
 
     return data;
   };
 
   const getInfoViews = async () => {
-    console.log("triggered2");
     let data = 0;
     await get(referenceViews)
       .then((snapshot) => {
         if (snapshot.exists()) {
-          console.log(snapshot.val());
           data = snapshot.val();
         } else {
-          console.log("No data available");
         }
       })
       .catch((error) => {
@@ -108,10 +87,9 @@ function App() {
   };
 
   useEffect(() => {
-    console.log("tick");
     getInfoClicks();
     getInfoViews();
-  }, [ticker]);
+  }, []);
 
   return (
     <div ref={boxRef} className="app-div">
