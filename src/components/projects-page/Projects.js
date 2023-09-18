@@ -24,6 +24,11 @@ export default function Projects(props) {
         imgSrc="/spaceship_game.png"
         repoUrl=""
         sub="Java, Java Swing"
+        optImg=<img
+          className="projimg2"
+          src="/spaceship_game2.png"
+          alt="spaceship2"
+        ></img>
       />
       <ProjectCard
         name="proj2"

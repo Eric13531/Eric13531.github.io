@@ -43,7 +43,7 @@ export default function ProjectCard(props) {
         {props.title}
       </div>
       {produceImg()}
-      {optImg}
+      {props.optImg}
 
       <div style={{ color: `${props.theme.projsub}` }} className="projsub">
         {props.sub}

@@ -6,12 +6,29 @@ import Projects from "./projects-page/Projects";
 import Contact from "./contact-page/Contact.js";
 
 import { theme } from "../helper/helper.js";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { checkPropTypes } from "prop-types";
 
 export default function Body(props) {
   const [mode, setMode] = useState(theme(false));
-  const [isDarkTheme, setIsDarkTheme] = useState(false);
+  const [isDarkTheme, setIsDarkTheme] = useState(() => {
+    const saved = localStorage.getItem("theme");
+    //const val = JSON.parse(saved);
+    console.log("Here, " + saved);
+    const darkTheme = !(saved === "light");
+    setMode(theme(darkTheme));
+    return darkTheme;
+  });
+
+  useEffect(() => {
+    if (isDarkTheme) {
+      localStorage.setItem("theme", "dark");
+    } else {
+      localStorage.setItem("theme", "light");
+    }
+
+    console.log(localStorage.getItem("theme"));
+  }, [isDarkTheme]);
 
   /*if (localStorage.getItem("dark?") === null) {
     localStorage.setItem("dark?", isDarkTheme);

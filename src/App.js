@@ -9,8 +9,8 @@ import { getDatabase, ref, set, get, onValue } from "firebase/database";
 import { useRef, useEffect, useState, child } from "react";
 
 function App() {
-  const [clicks, setClicks] = useState(0);
-  const [views, setViews] = useState(0);
+  const [clicks, setClicks] = useState("-");
+  const [views, setViews] = useState("-");
 
   const firebaseConfig = {
     // ...
@@ -71,19 +71,23 @@ function App() {
   };
 
   const getInfoViews = async () => {
-    let data = 0;
-    await get(referenceViews)
-      .then((snapshot) => {
-        if (snapshot.exists()) {
-          data = snapshot.val();
-        } else {
-        }
-      })
-      .catch((error) => {
-        console.error(error);
-      });
+    try {
+      let data = 0;
+      await get(referenceViews)
+        .then((snapshot) => {
+          if (snapshot.exists()) {
+            data = snapshot.val();
+          } else {
+          }
+        })
+        .catch((error) => {
+          console.error(error);
+        });
 
-    return data;
+      return data;
+    } catch {
+      return "Data Unavailable";
+    }
   };
 
   useEffect(() => {

@@ -41,7 +41,7 @@ export default function Contact(props) {
         src="/resumeimg.png"
         link=<a
           className={`${props.theme.darklink} linkstyle`}
-          href="/resume.pdf"
+          href="/Eric_Zhang_Resume.pdf"
           target="_blank"
           rel="noreferrer"
         >
